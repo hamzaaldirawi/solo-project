@@ -1,6 +1,6 @@
 # Solo Website
-  Using :
-    - HTML 
-    - CSS 
-    - jQuery
-    - Bootstrap
+I'll use the below for this project: 
+  - HTML
+  - CSS
+  - jQuery
+  - Bootstrap
