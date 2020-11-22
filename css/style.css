@@ -181,8 +181,19 @@ p {
     width: auto;
     height: auto;
     z-index: -1;
-    background: url("../img/video-poster/solo-poster.webp") no-repeat;
     background-size: cover;
+}
+/* Support Safari with Image JPG format */
+@supports not (background: url('../img/video-poster/solo-poster.webp')) {
+    #home-bg-video {
+        background: url('../img/video-poster/solo-poster.jpg') no-repeat;
+    }
+}
+
+@supports (background: url('../img/video-poster/solo-poster.webp')) {
+    #home-bg-video {
+        background: url('../img/video-poster/solo-poster.webp') no-repeat;
+    }
 }
 
 #home-overlay {
