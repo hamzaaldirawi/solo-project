@@ -1,4 +1,6 @@
-/* Start Root*/
+/*============================================
+                    ROOT
+==============================================*/
 :root {
     
     /* Google Fonts*/
@@ -13,9 +15,10 @@
     --white: #fff;
     --black: #000;
 }
-/* End Root */
 
-/* HTML, Body, Heading, Paragraph, Button General CSS */
+/*============================================
+                    GENERAL
+==============================================*/
 html, body {
     height: 100%;
 }
@@ -53,9 +56,10 @@ p {
         -ms-transition: all 0.5s;
         -o-transition: all 0.5s;
 }
-/* End General CSS */
 
-/* Start Preloader */
+/*============================================
+                  PRELOADER
+==============================================*/
 #preloader-holder {
     height: 100%;
     width: 100%;
@@ -159,9 +163,9 @@ p {
         -o-transform: rotate(360deg);
 }
 }
-/* End Preloader*/
-
-/* Start Home Section */
+/*============================================
+                HOME SECTION
+==============================================*/
 #home {
     background: none;
     height: 100%;
@@ -266,4 +270,135 @@ p {
 #arrow-down:focus {
     color: var(--moon-yellow);
 }
-/* End Home Section */
+/*============================================
+                ABOUT SECTION
+==============================================*/
+
+/*==============ABOUT PART 1==================*/
+.content-box-lg {
+    padding: 120px 0;
+}
+
+.vertical-heading h5 {
+    color: var(--moon-yellow);
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    word-spacing: 6px;
+    display: inline-block;
+    transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+    position: relative;
+    top: 60px;
+    left: -63px;
+}
+
+.vertical-heading h2 {
+    margin: 0 0 0 35px;
+    font-size: 42px;
+    font-weight: 100;
+    line-height: 50px;
+}
+
+.vertical-heading h2 span {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#about-right p:first-child {
+    margin-bottom: 30px;
+}
+
+#about-bottom {
+    margin-top: 60px;
+}
+
+#about-bottom picture img {
+    display: block;
+    margin: 0 auto;
+}
+
+/*==============ABOUT PART 2 ==================*/
+#about-02 {
+    background-color: var(--white-smoke);  
+}
+
+.content-box-md {
+    padding: 100px 0;
+}
+
+.about-item {
+    background-color: var(--white);
+    padding: 80px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);    
+}
+
+.about-item i {
+    font-size: 36px;
+    margin: 0;
+}
+
+.about-item h3 {
+    font-size: 28px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.about-item hr {
+    width: 65px;
+    height: 4px;
+    background-color: var(--moon-yellow);
+    margin: 0 auto;
+    border: none;
+}
+
+.about-item p {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/*========= ABOUT PART 2 HOVER ===========*/
+.about-item:hover {
+    background-color: var(--moon-yellow);
+}
+
+.about-item:hover i, 
+.about-item:hover h3,
+.about-item:hover p {
+    color: var(--white);
+}
+
+.about-item:hover i {
+    transform: translateY(-20px) rotate(270deg);
+        -webkit-transform: translateY(-20px) rotate(270deg);
+        -moz-transform: translateY(-20px) rotate(270deg);
+        -ms-transform: translateY(-20px) rotate(270deg);
+        -o-transform: translateY(-20px) rotate(270deg);
+}
+
+.about-item:hover #eye {
+    transform: translateY(-20px) rotate(360deg);
+        -webkit-transform: translateY(-20px) rotate(360deg);
+        -moz-transform: translateY(-20px) rotate(360deg);
+        -ms-transform: translateY(-20px) rotate(360deg);
+        -o-transform: translateY(-20px) rotate(360deg);
+}
+
+.about-item:hover hr {
+    background-color: var(--white);
+}
+/* Smooth transition */
+.about-item,
+.about-item i,
+.about-item hr {
+    transition: all 300ms ease-in-out;
+        -webkit-transition: all 300ms ease-in-out;
+        -moz-transition: all 300ms ease-in-out;
+        -ms-transition: all 300ms ease-in-out;
+        -o-transition: all 300ms ease-in-out;
+}
+
