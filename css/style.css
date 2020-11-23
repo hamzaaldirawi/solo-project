@@ -10,10 +10,14 @@
     /* Colors */
     --moon-yellow: #f4c613;
     --grey: #212226;
+    --grey-90o: rgba(33, 34, 38, 0.9);
+    --grey-70o: rgba(33, 34, 38, 0.7);
     --light-grey: #808080;
     --white-smoke: #f4f4f4;
     --white: #fff;
     --black: #000;
+    --black-85o: rgba(0, 0, 0, 0.85);
+    --black-10o: rgba(0, 0, 0, 0.1);
 }
 
 /*============================================
@@ -201,7 +205,7 @@ p {
 }
 
 #home-overlay {
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: var(--black-85o);
     position: fixed;
     top: 0;
     left: 0;
@@ -293,7 +297,7 @@ p {
         -o-transform: rotate(-90deg);
     position: relative;
     top: 60px;
-    left: -63px;
+    left: -43px;
 }
 
 .vertical-heading h2 {
@@ -333,7 +337,7 @@ p {
 .about-item {
     background-color: var(--white);
     padding: 80px 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);    
+    box-shadow: 0 0 10px var(--black-10o);
 }
 
 .about-item i {
@@ -402,3 +406,161 @@ p {
         -o-transition: all 300ms ease-in-out;
 }
 
+/*============================================
+                TEAM SECTION
+==============================================*/
+
+/*============== Team Members ================*/
+
+#team-left .vertical-heading {
+    min-height: 160px;
+}
+
+.team-member {
+    margin: 8px;
+    position: relative;
+}
+
+.team-member-overlay {
+    background-color: var(--grey-70o);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 300ms linear;
+        -webkit-transition: all 300ms linear;
+        -moz-transition: all 300ms linear;
+        -ms-transition: all 300ms linear;
+        -o-transition: all 300ms linear;
+}
+
+.team-member:hover .team-member-overlay {
+    opacity: 1;
+}
+
+.team-member-info {
+    width: 100%;
+    height: 100%;
+    padding: 80px 0;
+}
+
+.team-member-info h6 {
+    color: var(--moon-yellow);
+    font-size: 16px;
+    margin: 0;
+}
+
+.team-member-info p {
+    color: var(--white);
+}
+
+/*============= Social Icons ==============*/
+ul.social-list {
+    padding: 0;
+    margin-top: 20px;
+}
+
+ul.social-list li {
+    display: inline-block;
+    padding: 0;
+}
+
+ul.social-list li a {
+    border: 1px solid var(--white);
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    line-height: 35px;
+    color: var(--white);
+    border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    transition: all 400ms linear;
+        -webkit-transition: all 400ms linear;
+        -moz-transition: all 400ms linear;
+        -ms-transition: all 400ms linear;
+        -o-transition: all 400ms linear;
+}
+
+ul.social-list li:nth-child(1) a:hover {
+    background-color: #3b5998;
+    border-color: transparent;
+}
+
+ul.social-list li:nth-child(2) a:hover {
+    background-color: #00acee;
+    border-color: transparent;
+}
+
+ul.social-list li:nth-child(3) a:hover {
+    background-color: #171515;
+    border-color: transparent;
+}
+
+/*=============== Carousel Button ==================*/ 
+.owl-theme .owl-nav [class*=owl-] {
+    color: var(--grey);
+    font-size: 32px;
+    background: none;
+    margin: 0px;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: none;
+    color: var(--grey);
+}
+
+/*============= Skills Progress Bar ؟؟؟ ================*/ 
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill h4 {
+    line-height: 62px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.progress {
+    height: 25px;
+    border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    background-color: var(--white-smoke);
+    overflow: visible;
+}
+
+.progress-bar {
+    background-color: var(--moon-yellow);
+    position: relative;
+    overflow: visible;
+}
+
+.progress-bar span {
+    font-size: 12px;
+    font-weight: 100;
+    font-family: var(--open-sans);
+    background-color: var(--grey);
+    padding: 11px;
+    position: absolute;
+    left: 97%;
+    top: -42px;
+    line-height: 6px;
+}
+
+.progress-bar span:before {
+    content: "";
+    border-top: 8px solid var(--light-grey);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    position: absolute;
+    bottom: -8px;
+    left: 23%;
+}
