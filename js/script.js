@@ -30,3 +30,17 @@ $(function() {
         e.preventDefault();
     });
 });
+
+/* Animated Progress Bar - Team */
+$(function () {
+    $('#progress-elements').waypoint(function() {
+        $('.progress-bar').each(function () {
+            $(this).animate({
+                width: $(this).attr('aria-valuenow') + '%'
+            }, 1000);
+        }),
+        this.destroy(); // To not repeat animation
+    }, {
+        offset: 'bottom-in-view'
+    });
+});
