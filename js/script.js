@@ -41,7 +41,7 @@ $(function () {
         });
         this.destroy(); // To not repeat animation
     }, {
-        offset: 'bottom-in-view'
+        offset: '25%'
     });
 });
 
