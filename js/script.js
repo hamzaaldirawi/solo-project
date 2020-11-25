@@ -51,3 +51,36 @@ $(function () {
         animation: 'slide'
     });
 });
+
+/* Isotope - Filter Portfolio */
+$(window).on('load', function() {
+    // Init Isotope
+    $('#isotope-container').isotope({
+        
+    });
+
+    // Filter Buttons 
+    $('#isotope-filters').on('click', 'button', function() {
+        var filterValue = $(this).attr('data-filter');
+
+        // Filter Portfolio Items
+        $('#isotope-container').isotope({
+            filter: filterValue
+        });
+
+        // Active Button
+        $('#isotope-filters').find('.active').removeClass('active');
+        $(this).addClass('active');
+    });
+});
+
+/* Zoom Magnific */
+$(function() {
+    $('#portfolio-wrapper').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery:{
+            enabled:true
+          }
+      });
+});
