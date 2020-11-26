@@ -767,6 +767,10 @@ ul.social-list li:nth-child(3) a:hover {
 /*============================================
               PORTFOLIO SECTION
 ==============================================*/
+#portfolio {
+    padding-bottom: 160px;
+}
+
 #portfolio .vertical-heading {
     margin-bottom: 50px;
 }
@@ -931,4 +935,210 @@ ul.social-list li:nth-child(3) a:hover {
 
 .portfolio-item:hover .portfolio-item-overlay {
     opacity: 1;
+}
+
+/*============================================
+            TESTIMONIAL SECTION
+==============================================*/
+#testimonials {
+    background: var(--white-smoke);
+    padding-bottom: 45px;
+    overflow: visible;
+    position: relative;
+}
+
+#testimonials .vertical-heading {
+    padding: 80px 0;
+    margin-bottom: 50px;
+}
+
+#testimonial-slider {
+    background: var(--moon-yellow);
+    position: absolute;
+    top: -120px;
+}
+
+.testimonial {
+     padding: 20px 45px 0 45px;
+     color: var(--white);
+}
+
+.testimonial .row {
+    margin-bottom: 25px;
+}
+
+.testimonial h3 {
+    font-size: 32px;
+    line-height: 35px;
+}
+
+.testimonial .stars {
+    font-size: 20px;
+    margin: 20px 0 10px 0;
+}
+
+.testimonial p {
+    line-height: normal;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.testimonial .testimonial-p {
+    font-size: 16px;
+}
+
+.author .author-name {
+    width:106px;
+    margin-top: 25px;
+    text-align: left;
+}
+
+.author .author-name p {
+    margin: 0;
+}
+
+/*============================================
+                PRICING SECTION
+==============================================*/
+.pricing-table {
+    -webkit-box-shadow: 0 0 10px 0 var(--black-10o);
+    box-shadow: 0 0 10px 0 var(--black-10o);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+    padding: 32px 21px;
+    -webkit-transition: all 400ms linear;
+    -moz-transition: all 400ms linear;
+    -ms-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+    transition: all 400ms linear;
+}
+
+.pricing-table:hover {
+    background: var(--moon-yellow);
+}
+
+.pricing-table .type h4 {
+    color: var(--moon-yellow);
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.pricing-table .price {
+    border-top: 1px solid var(--grey);
+    border-bottom: 1px solid var(--grey);
+    padding: 24px 0;
+}
+
+.pricing-table.black .price {
+    border-top: 1px solid var(--white);
+    border-bottom: 1px solid var(--white);
+    padding: 24px 0;
+}
+
+.pricing-table .price h2 {
+    font-family: var(--open-sans);
+    font-size: 42px;
+    font-weight: 100;
+    margin: 0 0 0 24px;
+    position: relative;
+}
+
+.pricing-table .price h2 span {
+    font-family: var(--raleway);
+}
+
+.pricing-table .price h2 span.dollar {
+    font-size: 18px;
+    font-weight: 300;
+    position: absolute;
+    left: -20px;
+    top: 5px;
+}
+
+.pricing-table .price h2 span.month {
+    font-size: 11px;
+    font-weight: 400;
+    position: absolute;
+    left: 5px;
+    bottom: -12px;
+}
+
+.pricing-table .price p {
+    line-height: normal;
+    font-size: 13px;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing-table ul.package {
+    list-style: none;
+    padding: 20px 0;
+}
+
+.pricing-table ul.package li {
+    font-family: var(--open-sans);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.pricing-table ul.package li i {
+    width: 24px;
+}
+
+.pricing-table .btn-yellow,
+.pricing-table.black .btn-white {
+    width: 96%;
+    font-size: 15px;
+}
+
+.pricing-table:hover h4,
+.pricing-table:hover h2,
+.pricing-table:hover p,
+.pricing-table:hover ul.package {
+    color: var(--white);
+}
+
+.pricing-table:hover .btn-yellow {
+    background: var(--white);
+    color: var(--grey);
+    border: 1px solid var(--white);
+}
+
+.pricing-table .btn-yellow:hover,
+.pricing-table .btn-yellow:focus {
+    background: var(--grey);
+    color: var(--white);
+    border: 1px solid var(--grey);
+}
+
+.pricing-table.black {
+    background: var(--grey);
+    color: var(--white);
+}
+
+.pricing-table.black .type h4 {
+    color: var(--white);
+}
+
+.pricing-table.black:hover {
+    background: var(--moon-yellow);
+}
+
+.btn-white {
+    color: var(--grey);
+    background-color: var(--white);
+    border: 1px solid var(--white);
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    color: #fff;
+    background-color: var(--grey);
+    border: 1px solid var(--grey);
 }
