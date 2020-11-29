@@ -1430,11 +1430,11 @@ footer p span {
                 NAVBAR
 ==============================================*/
 .navbar {
-    padding: 30px 85px 20px 85px;
+    padding: 30px 85px;
 }
 
 .navbar-brand img {
-    vertical-align: 0;
+    vertical-align: top;
 }
 
 ul.navbar-nav li {
@@ -1454,7 +1454,7 @@ ul.navbar-nav li a:hover,
 ul.navbar-nav li a:focus {
     color: var(--moon-yellow);
 }
-
+/*=================== Sticky Nav ======================*/
 .white-navbar {
     background: var(--white);
     padding: 10px 85px;
@@ -1472,4 +1472,26 @@ ul.navbar-nav li a:focus {
 .white-navbar ul.navbar-nav li a:hover,
 .white-navbar ul.navbar-nav li a:focus {
     color: var(--moon-yellow);
+}
+
+.white-navbar ul.navbar-nav li a.active {
+    color: var(--moon-yellow);
+    font-weight: 600;
+}
+
+/*============================================
+                BACK TO TOP
+==============================================*/
+.btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 3px 15px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 22px;
+    display: none;
 }
