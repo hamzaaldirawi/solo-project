@@ -1425,3 +1425,51 @@ footer p {
 footer p span {
     color: var(--moon-yallow);
 }
+
+/*============================================
+                NAVBAR
+==============================================*/
+.navbar {
+    padding: 30px 85px 20px 85px;
+}
+
+.navbar-brand img {
+    vertical-align: 0;
+}
+
+ul.navbar-nav li {
+    padding: 0 5px;
+}
+
+ul.navbar-nav li a {
+    font-family: var(--raleway);
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+ul.navbar-nav li a:hover,
+ul.navbar-nav li a:focus {
+    color: var(--moon-yellow);
+}
+
+.white-navbar {
+    background: var(--white);
+    padding: 10px 85px;
+    box-shadow: 0 8px 6px -9px var(--grey);
+    z-index: 2;
+}
+.white-navbar ul.navbar-nav li {
+    padding: 0 5px;
+}
+
+.white-navbar ul.navbar-nav li a  {
+    color: var(--black);
+}
+
+.white-navbar ul.navbar-nav li a:hover,
+.white-navbar ul.navbar-nav li a:focus {
+    color: var(--moon-yellow);
+}
