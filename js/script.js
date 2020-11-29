@@ -172,9 +172,30 @@ $(function initMap() {
             // Show white bg
             $('nav').addClass('white-navbar');
             // change img
-            $('.navbar-brand img').attr('src', 'img/logo/logo-dark.png')
+            $('.navbar-brand img').attr('src', 'img/logo/logo-dark.png');
+            //back to top button
+            $('#back-to-top').fadeIn();
+
         } else {
             $('nav').removeClass('white-navbar');
+            $('.navbar-brand img').attr('src', 'img/logo/logo.png');
+            $('#back-to-top').fadeOut();
         }
+    });
+  });
+
+  /* Smooth Scrolling */
+  $(function () {
+
+    $('.smooth').click(function (event){
+
+        event.preventDefault();
+
+        var section_id = $(this).attr('href');
+
+        $('html, body').animate({
+            scrollTop: $(section_id).offset().top - 64
+        }, 1250, 'easeInOutExpo');
+        // - 64 to offset before top of section not inside it
     });
   });
