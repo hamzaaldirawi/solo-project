@@ -163,3 +163,18 @@ $(function initMap() {
       map: map,
     });
   });
+
+  /* Nav Show and Hide White BG */
+  $(function () {
+
+    $(window).scroll(function(){
+        if ($(window).scrollTop() > 50) {
+            // Show white bg
+            $('nav').addClass('white-navbar');
+            // change img
+            $('.navbar-brand img').attr('src', 'img/logo/logo-dark.png')
+        } else {
+            $('nav').removeClass('white-navbar');
+        }
+    });
+  });
