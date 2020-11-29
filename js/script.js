@@ -111,3 +111,55 @@ $(function() {
         e.preventDefault();
     });
 });
+
+/* Counter */
+$(function() {
+    $('.counter').counterUp({
+        delay: 20,
+        time: 2000
+    });
+});
+
+/* Clients */
+var owlClients = $('#clients-list');
+
+$(function() {
+    owlClients.owlCarousel({
+        items: 6,
+        autoplay: false,
+        smartSpeed: 700,
+        loop: true,
+        autoplayHoverPause: true,
+        nav: true,
+        dots: false,
+        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
+    });
+});
+
+$(function() {
+    owlClients.on('mousewheel', '.owl-stage', function (e) {
+        if (e.deltaY>0) {
+            owlClients.trigger('next.owl');
+        } else {
+            owlClients.trigger('prev.owl');
+        }
+        e.preventDefault();
+    });
+});
+
+/* Google Map */
+// Initialize and add the map
+$(function initMap() {
+    // The location of Uluru
+    const mapCenter = { lat: 40.716881, lng: -73.994019 };
+    // The map,
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 15,
+      center: mapCenter,
+    });
+    // The marker, positioned at Uluru
+    const marker = new google.maps.Marker({
+      position: mapCenter,
+      map: map,
+    });
+  });
