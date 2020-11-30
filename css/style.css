@@ -12,11 +12,13 @@
     --grey: #212226;
     --grey-90o: rgba(33, 34, 38, 0.9);
     --grey-70o: rgba(33, 34, 38, 0.7);
+    --silver-o: rgba(61, 68, 68, 0.6);
     --light-grey: #808080;
     --white-smoke: #f4f4f4;
     --white: #fff;
     --black: #000;
     --black-85o: rgba(0, 0, 0, 0.85);
+    --black-80o: rgba(0, 0, 0, 0.80);
     --black-10o: rgba(0, 0, 0, 0.1);
 }
 
@@ -1493,4 +1495,3 @@ ul.navbar-nav li a:focus {
     font-size: 22px;
     display: none;
 }
-
