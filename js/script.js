@@ -16,7 +16,17 @@ $(function() {
         autoplayHoverPause: true,
         nav: true,
         dots: false,
-        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
+        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+        responsive : {
+            // breakpoint from 0 up
+            0 : {
+                items: 1
+            },
+            // breakpoint from 480 up
+            991 : {
+                items: 2
+            }
+        }
     });
 });
 
@@ -147,25 +157,20 @@ $(function() {
     });
 });
 
-/* Google Map */
-// Initialize and add the map
-$(function initMap() {
-    // The location of Uluru
-    const mapCenter = { lat: 40.716881, lng: -73.994019 };
-    // The map,
-    const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 15,
-      center: mapCenter,
-    });
-    // The marker, positioned at Uluru
-    const marker = new google.maps.Marker({
-      position: mapCenter,
-      map: map,
-    });
-  });
+/* Map */
+$(function () {
+    var mymap = L.map('map').setView([40.716881, -73.994019], 15);
+    // Install Layer 
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(mymap);
+    // Marker 
+    L.circleMarker([40.716881, -73.994019], 
+        {radius: 15}).addTo(mymap);radius: 15
+});
 
-  /* Nav Show and Hide White BG */
-  $(function () {
+/* Nav Show and Hide White BG */
+$(function () {
 
     $(window).scroll(function(){
         if ($(window).scrollTop() > 50) {
@@ -182,20 +187,20 @@ $(function initMap() {
             $('#back-to-top').fadeOut();
         }
     });
-  });
+});
 
-  /* Smooth Scrolling */
-  $(function () {
+/* Smooth Scrolling */
+$(function () {
 
-    $('.smooth').click(function (event){
+$('.smooth').click(function (event){
 
-        event.preventDefault();
+    event.preventDefault();
 
-        var section_id = $(this).attr('href');
+    var section_id = $(this).attr('href');
 
-        $('html, body').animate({
-            scrollTop: $(section_id).offset().top - 64
-        }, 1250, 'easeInOutExpo');
-        // - 64 to offset before top of section not inside it
-    });
-  });
+    $('html, body').animate({
+        scrollTop: $(section_id).offset().top - 64
+    }, 1250, 'easeInOutExpo');
+    // - 64 to offset before top of section not inside it
+});
+});
