@@ -1387,6 +1387,11 @@ ul.navbar-nav li a:focus {
     font-weight: 600;
 }
 
+/* Mobile Nav */
+.topnav {
+    display: none;
+}
+
 /*============================================
                 BACK TO TOP
 ==============================================*/
