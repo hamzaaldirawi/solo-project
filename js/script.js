@@ -142,7 +142,17 @@ $(function() {
         autoplayHoverPause: true,
         nav: true,
         dots: false,
-        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
+        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+        responsive : {
+            // breakpoint from 0 up
+            0 : {
+                items: 2
+            },
+            // breakpoint from 480 up
+            768 : {
+                items: 6
+            }
+        }
     });
 });
 
@@ -169,7 +179,7 @@ $(function () {
         {radius: 15}).addTo(mymap);radius: 15
 });
 
-/* Nav Show and Hide White BG */
+/* Nav Show and Hide White BG & Grey BG & Mobile Menu */
 $(function () {
 
     $(window).scroll(function(){
@@ -180,11 +190,15 @@ $(function () {
             $('.navbar-brand img').attr('src', 'img/logo/logo-dark.png');
             //back to top button
             $('#back-to-top').fadeIn();
+            //remove grey-bg
+            $('nav').removeClass('grey-bg');
 
         } else {
             $('nav').removeClass('white-navbar');
             $('.navbar-brand img').attr('src', 'img/logo/logo.png');
             $('#back-to-top').fadeOut();
+            $('.navbar-collapse').removeClass('show');
+            $('nav').removeClass('grey-bg');
         }
     });
 });
@@ -192,15 +206,34 @@ $(function () {
 /* Smooth Scrolling */
 $(function () {
 
-$('.smooth').click(function (event){
+    $('.smooth').click(function (event){
 
-    event.preventDefault();
+        event.preventDefault();
 
-    var section_id = $(this).attr('href');
+        var section_id = $(this).attr('href');
 
-    $('html, body').animate({
-        scrollTop: $(section_id).offset().top - 64
-    }, 1250, 'easeInOutExpo');
-    // - 64 to offset before top of section not inside it
+        $('html, body').animate({
+            scrollTop: $(section_id).offset().top - 64
+        }, 1250, 'easeInOutExpo');
+        // - 64 to offset before top of section not inside it
+    });
 });
-});
+
+/* Mobile Menu BG */
+$(function () {
+    $('.navbar-toggler').on('click', function (){
+        if ($('nav').hasClass('grey-bg')) {
+            $('nav').removeClass('grey-bg');
+        } 
+        else if ($(window).scrollTop() < 50) {
+            $('nav').addClass('grey-bg');
+        }
+    });
+
+    $('.nav-link').on('click', function () {
+        $('.navbar-collapse').removeClass('show');
+        
+    });
+    
+});      
+
