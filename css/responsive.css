@@ -122,7 +122,7 @@
         margin-bottom: 40px;
     }
 
-    #services-01 #img-center {
+    #services-01 #img-center-services {
         display: block;
         margin: 0 auto;
         max-width: 80%;
@@ -344,7 +344,7 @@
         margin-bottom: 0px;
     }
 
-    #services-01 #img-center {
+    #services-01 #img-center-services {
         margin-top: 15px;
     }
 
@@ -380,7 +380,7 @@
         margin-bottom: 40px;
     }
 
-    #services-01 #img-center {
+    #services-01 #img-center-services {
         display: block;
         margin: 0 auto;
         max-width: 80%;
