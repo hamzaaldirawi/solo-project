@@ -5,12 +5,14 @@
 	<head>
 		<!-- Important meta tag -->
 		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE-Edge"> <!-- Not Important -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<!-- Title -->
 		<title>Solo - Creative Project</title>
 		
+		<!-- SEO -->
+		<meta name="description" content="Creative website with HTML5, CSS3, jQuery, and Bootstrap 4">
+
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="img/favicon/favicon.ico">
 
@@ -37,6 +39,9 @@
 		
 		<!-- Map -->
 		<link rel="stylesheet" href="css/leaflet.css">
+
+		<!-- Animation -->
+		<link rel="stylesheet" href="css/animate.css">
 
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="css/style.css">
@@ -142,7 +147,7 @@
 						<div class="row">
 							
 							<!-- About Left Side -->
-							<div class="col-lg-5">
+							<div class="col-lg-5 wow slideInLeft" data-wow-duration="1s">
 
 								<div id="about-left">
 
@@ -154,7 +159,7 @@
 							</div>
 
 							<!-- About Right Side -->
-							<div class="col-lg-7">
+							<div class="col-lg-7 wow slideInRight" data-wow-duration="1s">
 
 								<div id="about-right">
 									<p>Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -170,12 +175,12 @@
 						<!-- About Bottom -->
 						<div class="row">
 
-							<div class="col-lg-12 col-md-12">
+							<div class="col-lg-12 col-md-12 wow fadeInUp" data-wow-duration="2s">
 
 								<div id="about-bottom">
 
 									<picture>
-										<source srcset="img/about/about.webp">
+										<source srcset="img/about/about.webp" type="image/webp">
 										<source srcset="img/about/about.png">
 										<img id="img-center" class="img-fluid" src="img/about/about.png" alt="About us">
 									</picture>
@@ -197,7 +202,7 @@
 
 						<div class="row">
 
-							<div class="col-lg-4 col-md-4">
+							<div class="col-lg-4 col-md-4 wow fadeInLeft">
 
 								<div class="about-item text-center">
 
@@ -209,7 +214,7 @@
 								</div>
 							</div>
 
-							<div class="col-lg-4 col-md-4">
+							<div class="col-lg-4 col-md-4 wow fadeInUp" data-wow-duration="2s">
 
 								<div class="about-item text-center">
 
@@ -221,7 +226,7 @@
 								</div>
 							</div>
 
-							<div class="col-lg-4 col-md-4">
+							<div class="col-lg-4 col-md-4 wow fadeInRight">
 
 								<div class="about-item text-center">
 
@@ -253,7 +258,7 @@
 						<div class="row">
 
 							<!-- Team Left Side-->
-							<div class="col-lg-6 col-md-6">
+							<div class="col-lg-6 col-md-6 wow slideInLeft" data-wow-duration="1s">
 								
 								<div id="team-left">
 
@@ -267,7 +272,7 @@
 							</div>
 
 							<!-- Team Right Side -->
-							<div class="col-lg-6 col-md-6">
+							<div class="col-lg-6 col-md-6 wow slideInRight" data-wow-duration="1s">
 
 								<div id="team-members" class="owl-carousel owl-theme">
 
@@ -275,7 +280,7 @@
 									<div class="team-member">
 
 										<picture>
-											<source srcset="img/team/team-1.webp">
+											<source srcset="img/team/team-1.webp" type="image/webp">
 											<source srcset="img/team/team-1.jpg">
 											<img class="img-fluid" src="img/team/team-1.jpg" alt="team-member-1">
 										</picture>
@@ -298,7 +303,7 @@
 									<div class="team-member">
 
 										<picture>
-											<source srcset="img/team/team-2.webp">
+											<source srcset="img/team/team-2.webp" type="image/webp">
 											<source srcset="img/team/team-2.jpg">
 											<img class="img-fluid" src="img/team/team-2.jpg" alt="team-member-2">
 										</picture>
@@ -321,7 +326,7 @@
 									<div class="team-member">
 
 										<picture>
-											<source srcset="img/team/team-3.webp">
+											<source srcset="img/team/team-3.webp" type="image/webp">
 											<source srcset="img/team/team-3.jpg">
 											<img class="img-fluid" src="img/team/team-3.jpg" alt="team-member-3">
 										</picture>
@@ -343,7 +348,7 @@
 									<div class="team-member">
 
 										<picture>
-											<source srcset="img/team/team-4.webp">
+											<source srcset="img/team/team-4.webp" type="image/webp">
 											<source srcset="img/team/team-4.jpg">
 											<img class="img-fluid" src="img/team/team-4.jpg" alt="team-member-4">
 										</picture>
@@ -365,7 +370,7 @@
 									<div class="team-member">
 
 										<picture>
-											<source srcset="img/team/team-5.webp">
+											<source srcset="img/team/team-5.webp" type="image/webp">
 											<source srcset="img/team/team-5.jpg">
 											<img class="img-fluid" src="img/team/team-5.jpg" alt="team-member-5">
 										</picture>
@@ -387,7 +392,7 @@
 									<div class="team-member">
 
 										<picture>
-											<source srcset="img/team/team-6.webp">
+											<source srcset="img/team/team-6.webp" type="image/webp">
 											<source srcset="img/team/team-6.jpg">
 											<img class="img-fluid" src="img/team/team-6.jpg" alt="team-member-6">
 										</picture>
@@ -411,7 +416,7 @@
 						<!-- Progress Bar -->
 						<div id="progress-elements">
 
-							<div class="row">
+							<div class="row wow fadeInUp">
 
 								<div class="col-lg-6 col-md-6 col-sm-6">
 
@@ -504,7 +509,7 @@
 
 					<div class="row">
 
-						<div class="col-lg-12">
+						<div class="col-lg-12 wow fadeIn">
 
 							<div id="tech-statement" class="text-center">
 
@@ -530,7 +535,7 @@
 
 						<div class="row">
 
-							<div class="col-md-12 text-center">
+							<div class="col-md-12 text-center wow slideInDown">
 
 								<div class="horizontal-heading">
 									<h5>What We Do</h5>
@@ -541,12 +546,12 @@
 
 						<div class="row">
 
-							<div class="col-lg-4 col-12">
+							<div class="col-lg-4 col-12 wow slideInLeft">
 
 								<picture>
-									<source srcset="img/services/laptop-lamp.webp">
+									<source srcset="img/services/laptop-lamp.webp" type="image/webp">
 									<source srcset="img/services/laptop-lamp.png">
-									<img id="img-center" class="img-fluid" src="img/services/laptop-lamp.png" alt="services-laptop">
+									<img id="img-center-services" class="img-fluid" src="img/services/laptop-lamp.png" alt="services-laptop">
 								</picture>
 							</div>
 							<div class="col-lg-8 col-12">
@@ -641,7 +646,7 @@
 
 									<div class="col-lg-6 col-12">
 										<picture>
-											<source srcset="img/services/service-tab-img-01.webp">
+											<source srcset="img/services/service-tab-img-01.webp" type="image/webp">
 											<source srcset="img/services/service-tab-img-01.jpg">
 											<img class="img-fluid" src="img/services/service-tab-img-01.jpg" alt="creative">
 										</picture>
@@ -657,7 +662,7 @@
 												Aperiam ullam omnis praesentium temporibus deleniti laudantium perferendis iure consequuntur,
 												esse optio illo facere ipsa adipisci ab nulla qui est
 											</p>
-											<div id="services-02-btn">
+											<div class="services-02-btn">
 												<a class="btn btn-general btn-yellow" href="#services" title="Get In Touch" role="button">Get In Touch</a>
 											</div>
 										</div>
@@ -675,7 +680,7 @@
 
 									<div class="col-lg-6 col-12">
 										<picture>
-											<source srcset="img/services/service-tab-img-02.webp">
+											<source srcset="img/services/service-tab-img-02.webp" type="image/webp">
 											<source srcset="img/services/service-tab-img-02.jpg">
 											<img class="img-fluid" src="img/services/service-tab-img-02.jpg" alt="strategy">
 										</picture>
@@ -691,7 +696,7 @@
 												Aperiam ullam omnis praesentium temporibus deleniti laudantium perferendis iure consequuntur,
 												esse optio illo facere ipsa adipisci ab nulla qui est
 											</p>
-											<div id="services-02-btn">
+											<div class="services-02-btn">
 												<a class="btn btn-general btn-yellow" href="#services" title="Get In Touch" role="button">Get In Touch</a>
 											</div>
 										</div>
@@ -709,7 +714,7 @@
 
 									<div class="col-lg-6 col-12">
 										<picture>
-											<source srcset="img/services/service-tab-img-03.webp">
+											<source srcset="img/services/service-tab-img-03.webp" type="image/webp">
 											<source srcset="img/services/service-tab-img-03.jpg">
 											<img class="img-fluid" src="img/services/service-tab-img-03.jpg" alt="design">
 										</picture>
@@ -725,7 +730,7 @@
 												Aperiam ullam omnis praesentium temporibus deleniti laudantium perferendis iure consequuntur,
 												esse optio illo facere ipsa adipisci ab nulla qui est
 											</p>
-											<div id="services-02-btn">
+											<div class="services-02-btn">
 												<a class="btn btn-general btn-yellow" href="#services" title="Get In Touch" role="button">Get In Touch</a>
 											</div>
 										</div>
@@ -743,7 +748,7 @@
 
 									<div class="col-lg-6 col-12">
 										<picture>
-											<source srcset="img/services/service-tab-img-04.webp">
+											<source srcset="img/services/service-tab-img-04.webp" type="image/webp">
 											<source srcset="img/services/service-tab-img-04.jpg">
 											<img class="img-fluid" src="img/services/service-tab-img-04.jpg" alt="development">
 										</picture>
@@ -759,7 +764,7 @@
 												Aperiam ullam omnis praesentium temporibus deleniti laudantium perferendis iure consequuntur,
 												esse optio illo facere ipsa adipisci ab nulla qui est
 											</p>
-											<div id="services-02-btn">
+											<div class="services-02-btn">
 												<a class="btn btn-general btn-yellow" href="#services" title="Get In Touch" role="button">Get In Touch</a>
 											</div>
 										</div>
@@ -781,7 +786,7 @@
 
 					<div class="row">
 
-						<div class="col-md-12">
+						<div class="col-md-12 wow slideInLeft">
 
 							<div class="vertical-heading">
 								<h5>Find Out More</h5>
@@ -804,7 +809,7 @@
 
 				<!-- Portfolio Items Wrapper -->
 			
-				<section id="portfolio-wrapper">
+				<section id="portfolio-wrapper" class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
 				
 						<div class="container-fluid">
 				
@@ -816,7 +821,7 @@
 									<div class="portfolio-item">
 										<a href="img/portfolio/001.jpg" title="Add Description">
 											<picture>
-												<source srcset="img/portfolio/001.webp">
+												<source srcset="img/portfolio/001.webp" type="image/webp">
 												<source srcset="img/portfolio/001.jpg">
 												<img class="img-fluid" src="img/portfolio/001.jpg" alt="Portfolio 01">
 											</picture>
@@ -848,7 +853,7 @@
 									<div class="portfolio-item">
 										<a href="img/portfolio/002.jpg" title="Add Description">
 											<picture>
-												<source srcset="img/portfolio/002.webp">
+												<source srcset="img/portfolio/002.webp" type="image/webp">
 												<source srcset="img/portfolio/002.jpg">
 												<img class="img-fluid" src="img/portfolio/002.jpg" alt="Portfolio 02">
 											</picture>
@@ -880,7 +885,7 @@
 									<div class="portfolio-item">
 										<a href="img/portfolio/003.jpg" title="Add Description">
 											<picture>
-												<source srcset="img/portfolio/003.webp">
+												<source srcset="img/portfolio/003.webp" type="image/webp">
 												<source srcset="img/portfolio/003.jpg">
 												<img class="img-fluid" src="img/portfolio/003.jpg" alt="Portfolio 03">
 											</picture>
@@ -910,7 +915,7 @@
 									<div class="portfolio-item">
 										<a href="img/portfolio/004.jpg" title="Add Description">
 											<picture>
-												<source srcset="img/portfolio/004.webp">
+												<source srcset="img/portfolio/004.webp" type="image/webp">
 												<source srcset="img/portfolio/004.jpg">
 												<img class="img-fluid" src="img/portfolio/004.jpg" alt="Portfolio 04">
 											</picture>
@@ -940,7 +945,7 @@
 									<div class="portfolio-item">
 										<a href="img/portfolio/005.jpg" title="Add Description">
 											<picture>
-												<source srcset="img/portfolio/005.webp">
+												<source srcset="img/portfolio/005.webp" type="image/webp">
 												<source srcset="img/portfolio/005.jpg">
 												<img class="img-fluid" src="img/portfolio/005.jpg" alt="Portfolio 04">
 											</picture>
@@ -970,7 +975,7 @@
 									<div class="portfolio-item">
 										<a href="img/portfolio/006.jpg" title="Add Description">
 											<picture>
-												<source srcset="img/portfolio/006.webp">
+												<source srcset="img/portfolio/006.webp" type="image/webp">
 												<source srcset="img/portfolio/006.jpg">
 												<img class="img-fluid" src="img/portfolio/006.jpg" alt="Portfolio 05">
 											</picture>
@@ -1001,7 +1006,7 @@
 									<div class="portfolio-item">
 										<a href="img/portfolio/007.jpg" title="Add Description">
 											<picture>
-												<source srcset="img/portfolio/007.webp">
+												<source srcset="img/portfolio/007.webp" type="image/webp">
 												<source srcset="img/portfolio/007.jpg">
 												<img class="img-fluid" src="img/portfolio/007.jpg" alt="Portfolio 07">
 											</picture>
@@ -1031,7 +1036,7 @@
 									<div class="portfolio-item">
 										<a href="img/portfolio/008.jpg" title="Add Description">
 											<picture>
-												<source srcset="img/portfolio/008.webp">
+												<source srcset="img/portfolio/008.webp" type="image/webp">
 												<source srcset="img/portfolio/008.jpg">
 												<img class="img-fluid" src="img/portfolio/008.jpg" alt="Portfolio 08">
 											</picture>
@@ -1068,7 +1073,7 @@
 					<div class="row">
 
 						<!-- Left Side -->
-						<div class="col-lg-4 col-12">
+						<div class="col-lg-4 col-12 wow slideInLeft">
 
 							<div class="vertical-heading">
 								<h5>Who We Are</h5>
@@ -1078,7 +1083,7 @@
 						</div>
 
 						<!-- Right Side -->
-						<div class="col-lg-8 col-12">
+						<div class="col-lg-8 col-12 wow fadeIn" data-wow-duration="2s">
 							
 							<div id="testimonial-slider" class="owl-carousel owl-theme">
 
@@ -1117,7 +1122,7 @@
 											<div class="col-md-2">
 
 												<picture>
-													<source srcset="img/testimonial/client-1.webp">
+													<source srcset="img/testimonial/client-1.webp" type="image/webp">
 													<source srcset="img/testimonial/client-1.jpg">
 													<img class="img-fluid rounded-circle" src="img/testimonial/client-1.jpg" alt="client 1">
 												</picture>
@@ -1168,7 +1173,7 @@
 											<div class="col-md-2">
 
 												<picture>
-													<source srcset="img/testimonial/client-2.webp">
+													<source srcset="img/testimonial/client-2.webp" type="image/webp">
 													<source srcset="img/testimonial/client-2.jpg">
 													<img class="img-fluid rounded-circle" src="img/testimonial/client-2.jpg" alt="client 1">
 												</picture>
@@ -1218,7 +1223,7 @@
 											<div class="col-md-2">
 
 												<picture>
-													<source srcset="img/testimonial/client-3.webp">
+													<source srcset="img/testimonial/client-3.webp" type="image/webp">
 													<source srcset="img/testimonial/client-3.jpg">
 													<img class="img-fluid rounded-circle" src="img/testimonial/client-3.jpg" alt="client 1">
 												</picture>
@@ -1248,7 +1253,7 @@
 
 					<div class="row">
 
-						<div class="col-md-12 text-center">
+						<div class="col-md-12 text-center wow slideInDown">
 
 							<div class="horizontal-heading">
 								<h5>Lovely Customers</h5>
@@ -1261,7 +1266,7 @@
 					<div id="products">
 						<div class="row">
 							<!-- Product 1 -->
-							<div class="col-lg-4 col-12">
+							<div class="col-lg-4 col-12 wow fadeInLeft">
 
 								<div class="pricing-table">
 
@@ -1295,14 +1300,14 @@
 										<li><i class="fa fa-check"></i>10 Free Web Sites</li>
 									</ul>
 
-									<div id="pricing-btn">
+									<div class="pricing-btn">
 										<a class="btn btn-general btn-yellow" href="#" title="Get Started" role="button">Get Started</a>
 									</div>
 								</div>
 							</div>
 
 							<!-- Product 2 -->
-							<div class="col-lg-4 col-12">
+							<div class="col-lg-4 col-12 wow fadeInUp" data-wow-duration="3s">
 
 								<div class="pricing-table black">
 
@@ -1336,14 +1341,14 @@
 										<li><i class="fa fa-check"></i>25 Free Web Sites</li>
 									</ul>
 
-									<div id="pricing-btn">
+									<div class="pricing-btn">
 										<a class="btn btn-general btn-white" href="#" title="Get Started" role="button">Get Started</a>
 									</div>
 								</div>
 							</div>
 
 							<!-- Product 3 -->
-							<div class="col-lg-4 col-12">
+							<div class="col-lg-4 col-12 wow fadeInRight">
 
 								<div class="pricing-table">
 
@@ -1377,7 +1382,7 @@
 										<li><i class="fa fa-check"></i>Unlimited Free Web Sites</li>
 									</ul>
 
-									<div id="pricing-btn">
+									<div class="pricing-btn">
 										<a class="btn btn-general btn-yellow" href="#" title="Get Started" role="button">Get Started</a>
 									</div>
 								</div>
@@ -1397,7 +1402,7 @@
 
 					<div class="row">
 
-						<div class="col-md-12">
+						<div class="col-md-12 wow slideInLeft">
 
 							<div class="vertical-heading">
 								<h5>Fun Facts</h5>
@@ -1406,7 +1411,7 @@
 						</div>
 					</div>
 
-					<div class="row">
+					<div class="row fadeInUp" data-wow-duration="2s">
 
 						<div class="col-lg-3 col-md-6 col-12">
 
@@ -1462,7 +1467,7 @@
 
 					<div class="row">
 
-						<div class="col-md-12">
+						<div class="col-md-12 wow slideInLeft">
 
 							<div class="horizontal-heading">
 								<h5>Satisfied Clients</h5>
@@ -1474,7 +1479,7 @@
 
 					<div class="row">
 						
-						<div class="col-md-12">
+						<div class="col-md-12 wow bounceInLeft" data-wow-duration="1s" data-wow-delay=".5s">
 
 							<div id="clients-list" class="owl-carousel owl-theme"> 
 
@@ -1536,7 +1541,7 @@
 
 					<div class="row">
 
-						<div class="col-lg-5 col-12">
+						<div class="col-lg-5 col-12 wow slideInLeft">
 
 							<div id="blog-left">
 
@@ -1551,7 +1556,7 @@
 							</div>
 						</div>
 
-						<div class="col-lg-7 col-12">
+						<div class="col-lg-7 col-12 wow fadeInUp" data-wow-duration="3s">
 							
 							<div class="row">
 
@@ -1750,7 +1755,7 @@
 
 					<div class="col-lg-12">
 
-						<p>Copyright &copy; 2020 All Rights Reserved By <span>Solo Inc.</span></p>
+						<p>Copyright &copy; 2020 All Rights Reserved By <span><a href="#home">Solo Inc.</a></span></p>
 					</div>
 				</div>
 			</div>
@@ -1797,6 +1802,9 @@
 		
 		<!-- Webp Support for BG -->
 		<script src="js/modernizr-webp.js"></script>
+
+		<!-- Animation JS -->
+		<script src="js/wow.min.js"></script>
 
 		<!-- Custom JavaScript-->
 		<script src="js/script.js"></script>
