@@ -4,6 +4,15 @@ $(window).on('load', function() {
     $('#preloader-holder').delay(350).fadeOut('slow');
 });
 
+/* WEBP Support */
+Modernizr.on('webp', function (result) {
+    if (result) {
+      // supported
+    } else {
+      // not-supported
+    }
+});
+
 /* Owl Carousel - Team */
 var owlTeam = $('#team-members');
 
@@ -176,7 +185,10 @@ $(function () {
     }).addTo(mymap);
     // Marker 
     L.circleMarker([40.716881, -73.994019], 
-        {radius: 15}).addTo(mymap);radius: 15
+        {radius: 15}).addTo(mymap);
+    
+    L.marker([40.716881, -73.994019],
+        {icon: './img/map/pin-location.png'}).addTo(mymap);
 });
 
 /* Nav Show and Hide White BG & Grey BG & Mobile Menu */
