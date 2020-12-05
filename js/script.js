@@ -5,12 +5,27 @@ $(window).on('load', function() {
 });
 
 /* WEBP Support */
-Modernizr.on('webp', function (result) {
-    if (result) {
-      // supported
-    } else {
-      // not-supported
-    }
+$(function () {
+    Modernizr.on('webp', function (result) {
+        if (result) {
+          // supported
+        } else {
+          // not-supported
+        }
+    });
+});
+
+/* Animation Support */
+$(function () {
+    new WOW().init();
+});
+
+$(window).on('load', function () {
+    $('#home-heading-1').addClass('animated fadeInDown');
+    $('#home-heading-2').addClass('animated faedInLeft');
+    $('#home-text').addClass('animated zoomIn');
+    $('#home-btn').addClass('animated zoomIn');
+    $('#arrow-down i').addClass('animated fadeInDown infinite');
 });
 
 /* Owl Carousel - Team */
@@ -56,7 +71,7 @@ $(function () {
         $('.progress-bar').each(function () {
             $(this).animate({
                 width: $(this).attr('aria-valuenow') + '%'
-            }, 1000);
+            }, 1500);
         });
         this.destroy(); // To not repeat animation
     }, {
@@ -187,8 +202,7 @@ $(function () {
     L.circleMarker([40.716881, -73.994019], 
         {radius: 15}).addTo(mymap);
     
-    L.marker([40.716881, -73.994019],
-        {icon: './img/map/pin-location.png'}).addTo(mymap);
+    L.marker([40.716881, -73.994019]).addTo(mymap);
 });
 
 /* Nav Show and Hide White BG & Grey BG & Mobile Menu */
