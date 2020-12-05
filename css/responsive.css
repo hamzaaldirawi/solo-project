@@ -470,7 +470,6 @@
     }
 
     .owl-carousel .owl-item img {
-        width: 25%;
         position: relative;
     }
 
@@ -478,10 +477,6 @@
         position: absolute;
         top: -75px;
         left: 100px;
-    }
-
-    .owl-theme .owl-nav {
-        margin-top: -50px;
     }
 
     /* Price */

@@ -229,16 +229,12 @@ p {
     transform: translateX(-50%) translateY(-50%);
 }
 /* Support Safari with Image JPG format */
-@supports not (background: url('../img/video-poster/solo-poster.webp')) {
-    #home-bg-video {
+.no-webp #home-bg-video {
         background: url('../img/video-poster/solo-poster.jpg') no-repeat;
-    }
 }
 
-@supports (background: url('../img/video-poster/solo-poster.webp')) {
-    #home-bg-video {
+.webp #home-bg-video {
         background: url('../img/video-poster/solo-poster.webp') no-repeat;
-    }
 }
 
 #home-overlay {
@@ -564,16 +560,12 @@ ul.social-list li:nth-child(3) a:hover {
               STATEMENT SECTION
 ==============================================*/
 /* Support Safari with Image JPG format */
-@supports not (background: url('../img/tech/tech-quote.webp')) {
-    #statement {
+.no-webp #statement {
         background: url('../img/tech/tech-quote.jpg') no-repeat;
-    }
 }
 
-@supports (background: url('../img/tech/tech-quote.webp')) {
-    #statement {
-        background: url('../img/tech/tech-quote.jpg') no-repeat;
-    }
+.webp #statement {
+        background: url('../img/tech/tech-quote.webp') no-repeat;
 }
 
 #statement {
@@ -1073,16 +1065,12 @@ ul.social-list li:nth-child(3) a:hover {
 /*============================================
                 PRICING SECTION
 ==============================================*/
-@supports not (background: url('../img/stats/stats-bg-min.webp')) {
-    #stats {
+.no-webp #stats {
         background: url('../img/stats/stats-bg-min.jpg') no-repeat;
-    }
 }
 
-@supports (background: url('../img/stats/stats-bg-min.jpg')) {
-    #stats {
-        background: url('../img/stats/stats-bg-min.jpg') no-repeat;
-    }
+.webp #stats {
+        background: url('../img/stats/stats-bg-min.webp') no-repeat;
 }
 
 #stats {
