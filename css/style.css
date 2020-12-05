@@ -60,8 +60,6 @@ p {
     transition: all 0.5s;
 }
 
-
-
 /*=============VERTICAL HEADING===============*/
 .vertical-heading h5 {
     color: var(--moon-yellow);
