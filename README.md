@@ -1,4 +1,7 @@
 # Solo Website
+
+  - Live at https://hamzaaldirawi.github.io/solo-project/  
+  
 I'll use the below for this project: 
   - HTML
   - CSS
@@ -64,8 +67,6 @@ I'll use the below for this project:
 Last Step on 12/06/2020
 > - Optimize images and video
 > - Add Code Validation
-
-  - Live at https://hamzaaldirawi.github.io/solo-project/ 
 
   - Minified Version at: https://solo-website-min.netlify.app
 
