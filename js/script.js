@@ -48,7 +48,8 @@ $(function() {
             },
             // breakpoint from 480 up
             991 : {
-                items: 2
+                items: 2,
+                rows: 2
             }
         }
     });
